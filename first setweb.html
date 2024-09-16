@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيف تصبح محترف في HTML و CSS</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            padding-left: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* تنسيق الجدول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        /* تنسيق الفوتر */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* إضافة تأثيرات على الموقع */
+        .container {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>كيف تصبح محترف في HTML و CSS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#definition">التعريف</a></li>
+                    <li><a href="#why">لماذا تعلم البرمجة؟</a></li>
+                    <li><a href="#timeline">جدول زمني</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="definition">
+            <div class="container">
+                <h2>ما هو HTML و CSS؟</h2>
+                <p>
+                    HTML (لغة ترميز النص التشعبي) هي اللغة المستخدمة لبناء هيكل صفحات الويب. تساعد في تنظيم المحتوى من خلال تحديد العناصر مثل العناوين، الفقرات، والصور.
+                    <br> CSS (أوراق الأنماط المتتالية) هي اللغة التي نستخدمها لتصميم صفحات الويب. توفر CSS القدرة على التحكم في الألوان، الخطوط، الهوامش، والتنسيق العام لصفحة الويب.
+                </p>
+            </div>
+        </section>
+
+        <section id="why">
+            <div class="container">
+                <h2>لماذا يجب أن تتعلم البرمجة؟</h2>
+                <p>
+                    تعلم البرمجة أصبح مهارة أساسية في عصر التكنولوجيا. البرمجة تفتح أمامك فرصًا كثيرة في سوق العمل، وتساعدك في بناء مشاريعك الخاصة وتطوير مهارات حل المشكلات. HTML و CSS هما أولى الخطوات في مسار تعلم تطوير الويب.
+                </p>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <div class="container">
+                <h2>جدول زمني لتعلم البرمجة في 3 أشهر</h2>
+
+                <h3>الشهر الأول: HTML و CSS</h3>
+                <table>
+                    <tr>
+                        <th>الأسبوع</th>
+                        <th>اليوم</th>
+                        <th>الموضوع</th>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 1</td>
+                        <td>اليوم 1</td>
+                        <td>مقدمة في HTML، الهيكل الأساسي للصفحة</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>عناصر النصوص والقوائم</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>الروابط والصور</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>النماذج الأساسية</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>العناصر الهيكلية (div, span)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: بناء صفحة ويب بسيطة</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 2</td>
+                        <td>اليوم 1</td>
+                        <td>مقدمة في CSS، تحديد الأنماط الأساسية</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>الألوان والخطوط</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>الهوامش والحشوات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>التصميم باستخدام display و position</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>استخدام flexbox لتنسيق العناصر</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: تحسين تصميم الصفحة السابقة باستخدام CSS</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 3</td>
+                        <td>اليوم 1-2</td>
+                        <td>بناء صفحات متعددة مع HTML و CSS</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3-4</td>
+                        <td>تعلم تقنيات تحسين التصميم (Responsive Design)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5-7</td>
+                        <td>مشروع تطبيقي: بناء موقع ويب بسيط</td>
+                    </tr>
+                </table>
+
+                <h3>الشهر الثاني: Python</h3>
+                <table>
+                    <tr>
+                        <th>الأسبوع</th>
+                        <th>اليوم</th>
+                        <th>الموضوع</th>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 1</td>
+                        <td>اليوم 1</td>
+                        <td>مقدمة في Python، تثبيت البيئة</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>المتغيرات وأنواع البيانات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>العبارات الشرطية والحلقات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>الدوال الأساسية</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>التعامل مع الملفات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: آلة حاسبة بسيطة</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 2</td>
+                        <td>اليوم 1</td>
+                        <td>البرمجة الشيئية (OOP) في Python</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>الفئات (Classes) والكائنات (Objects)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>الوراثة (Inheritance)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>التعددية (Polymorphism)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>التغليف (Encapsulation)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: برنامج إدارة قائمة المهام</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 3</td>
+                        <td>اليوم 1</td>
+                        <td>التعامل مع المكتبات الأساسية</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>البرمجة المتقدمة (قوائم، قواميس)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>التعامل مع قواعد البيانات باستخدام SQLite</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>معالجة الاستثناءات (Exception Handling)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>استخدام المكتبات الإضافية مثل requests و beautifulsoup</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: برنامج لتحليل بيانات ويب</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 4</td>
+                        <td>اليوم 1-3</td>
+                        <td>مراجعة جميع مواضيع Python</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4-7</td>
+                        <td>مشاريع إضافية لتطبيق ما تعلمته</td>
+                    </tr>
+                </table>
+
+                <h3>الشهر الثالث: JavaScript</h3>
+                <table>
+                    <tr>
+                        <th>الأسبوع</th>
+                        <th>اليوم</th>
+                        <th>الموضوع</th>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 1</td>
+                        <td>اليوم 1</td>
+                        <td>مقدمة في JavaScript، تثبيت البيئة</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>المتغيرات وأنواع البيانات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>العبارات الشرطية والحلقات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>الدوال والأحداث</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>التعامل مع DOM</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: آلة حاسبة بلغة JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 2</td>
+                        <td>اليوم 1</td>
+                        <td>البرمجة الشيئية (OOP) في JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 2</td>
+                        <td>التعامل مع الوعود (Promises) و async/await</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3</td>
+                        <td>استخدام مكتبات JavaScript مثل jQuery</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4</td>
+                        <td>إدارة الحالة باستخدام LocalStorage و SessionStorage</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5</td>
+                        <td>التعامل مع APIs</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 6-7</td>
+                        <td>مشروع تطبيقي: تطبيق ويب تفاعلي</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 3</td>
+                        <td>اليوم 1-2</td>
+                        <td>استخدام JavaScript لتحسين التفاعل في الصفحات</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 3-4</td>
+                        <td>بناء تطبيق ويب متكامل (مثلاً: قائمة مهام تفاعلية)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 5-7</td>
+                        <td>مشروع تطبيقي: بناء تطبيق ويب يعرض بيانات من API</td>
+                    </tr>
+                    <tr>
+                        <td>الأسبوع 4</td>
+                        <td>اليوم 1-3</td>
+                        <td>مراجعة جميع مواضيع JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>اليوم 4-7</td>
+                        <td>مشاريع إضافية لتطبيق ما تعلمته</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p2>  offs_hamza_ موقع تعلم البرمجة الموقع من تاليف حمزة. يمكنم زيارة ملفي الشخصي عبر الانستجرام</p>
+        </div>
+    </footer>
+
+</body>
+</html>
